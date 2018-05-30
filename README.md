@@ -1,0 +1,1 @@
+https://planetarygenerator.mateuszdrwal.com
