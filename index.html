@@ -10,9 +10,11 @@
 
 	<div class="container mt-3">
 		<h1>Planetary Gear Generator</h1>
+		<object data="https://img.shields.io/github/stars/mateuszdrwal/Planetary-Generator.svg?label=Stars&amp;style=social" height=20></object>
 		<p>This is a generator for simple planetary gears and compound planetary gears. A simple planetary gear consists of a ring gear, a sun gear, and multiple planet gears, where typically the sun is the input and the planet carrier is the output. A compound planetary gear consists of multiple simple planetary gears in so-called "Stages". Please choose which type you want to generate below.</p>
 		<p>Things to keep in mind:</p>
 		<ul>
+			<li>This generator doesn't generate the actual gears themselves, instead it generates their teeth count so you can generate them yourself. The module has to be the same for all gears in each stage. To generate the gears, you can use one of many other generators. I highly recommend the <a href="https://apps.autodesk.com/FUSION/en/Detail/Index?id=9029586664984391977&appLang=en&os=Win64">Helical Gear Generator add-in for fusion 360</a> by Ross Korsky if you are using it, otherwise <a href="http://geargenerator.com">geargenerator.com</a> by Abel Vincze.</li>
 			<li>If you are using this generator to create helical gears make sure to use the radial system, otherwise, you will have to divide the "Planet distance from center" by the cosine of the helix angle for it to be correct.</li>
 			<li>After you have created your 3 gears and have the planet meshing with both the sun and ring gear and you create a circular pattern you will often have to rotate the other planets to make them mesh. do this by rotating the planet by a multiple of the angle shown by the generator. For example, if you have a planetary with 3 planets and a "Rotate planets by multiple of" of 60&#176;, only one of the rotations of the planets in the set 0&#176;, 60&#176;, 120&#176; will make the planet mesh.</li>
 			<li>For compound planetaries, the second stage will have a "Module multiplier". to get the module of the second stages gears, multiply the first stage module of your choice with the module multiplier.</li>
